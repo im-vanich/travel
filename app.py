@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from data import tours
+from data import *
 
 app = Flask(__name__)
 
@@ -14,7 +14,7 @@ def departures(departure):
     return render_template("departure.html")
 
 
-@app.route("/tours/<id>/")
+@app.route("/tours/<int:id>/")
 def tours(id):
     return render_template("tour.html")
 

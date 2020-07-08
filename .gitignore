@@ -4,6 +4,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+.idea/
 
 # Icon must end with two \r
 Icon
@@ -168,3 +169,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+.idea/.gitignore
+.idea/Travel.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
