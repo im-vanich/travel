@@ -1,3 +1,4 @@
+import random
 from flask import Flask, render_template
 from data import tours, departures, title, subtitle, description
 
@@ -6,6 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index_render():
+    list_of_tours = random.sample(list(tours), 6)
     return render_template(
         "index.html",
         tours=tours,
@@ -13,6 +15,7 @@ def index_render():
         departures=departures,
         subtitle=subtitle,
         description=description,
+        list_of_tours=list_of_tours
     )
 
 
