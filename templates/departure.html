@@ -2,7 +2,8 @@
 
 {% block content %}
 <h1 class="display-5 mt-4">Летим {{ departures[departure]}}</h1>
-<p class="mb-4">Найдено {{ tour_on_departure|length }} туров, от {{ min_price }} до {{ max_price }} и от {{ min_nights }} ночей до {{ max_nights }} ночей</p>
+<p class="mb-4">Найдено {{ tour_on_departure|length }} туров, от {{ min_price }} до {{ max_price }} и от {{ min_nights
+    }} ночей до {{ max_nights }} ночей</p>
 <!-- CARDS -->
 <div class="row mt-5">
     {% for k,v in tour_on_departure.items() %}
@@ -11,7 +12,7 @@
             <img src="{{ v.picture }}"  class="card-img-top img-fluid" alt="">
             <div class="card-body">
                 <h2 class="h5 card-title">{{ v.title }}</h2>
-                <p class="card-text">{{ v.description|truncate(85) }}</p>
+                <p class="card-text">{{ v.description|truncate(90) }}</p>
                 <a href="{{ url_for('tours_render', id=k) }}" class="btn btn-sm btn-primary">Подробнее</a>
             </div>
         </div>
