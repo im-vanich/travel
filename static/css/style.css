@@ -1,6 +1,7 @@
 .main-bg {
-    background-image: url("images/van-in-desert.jpg");
+    background-image: url("../images/van-in-desert.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
