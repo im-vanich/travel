@@ -1,6 +1,8 @@
 # Travel
 
-Training project for [a course on the Stepik](<https://stepik.org/course/63298>).
+## Simple project to finding tours
+
+
 
 ## Dependencies
 
