@@ -2,6 +2,8 @@
 
 ## Simple project to finding tours
 
+- 1.Display tour information
+
 
 
 ## Dependencies
